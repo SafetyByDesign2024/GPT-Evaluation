@@ -1,0 +1,137 @@
+{
+  "evaluation": {
+    "step_overview": {
+      "goals": [
+        "To deliver the system and prepare it for use",
+        "To provide sufficient information to operators and users"
+      ]
+    },
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Choose Focus Area",
+        "description": "GPT will ask users to choose an area to focus on among Packaging, Transportation, Installation, Certification, and Preparation for Operation. While all areas should be considered in a real-world scenario, for this training exercise, users can start with one or two areas.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Address all chosen focus areas"
+            },
+            {
+              "id": 2,
+              "description": "Identify potential risks for each chosen area"
+            },
+            {
+              "id": 3,
+              "description": "Develop solutions for identified risks"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Provide detailed and specific solutions for each identified risk"
+            },
+            {
+              "id": 2,
+              "description": "Consider information from 'things to consider' when developing solutions"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Present risks and solutions in a logical order"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "focus_areas": [
+      "Packaging",
+      "Transportation",
+      "Installation",
+      "Certification",
+      "Preparation for Operation"
+    ],
+    "risk_categories": [
+      {
+        "area": "Packaging",
+        "potential_risks": [
+          "Damage during packaging process",
+          "Inadequate protection for sensitive components",
+          "Incorrect labeling or documentation"
+        ]
+      },
+      {
+        "area": "Transportation",
+        "potential_risks": [
+          "Physical damage during transit",
+          "Exposure to extreme temperatures or humidity",
+          "Theft or loss of components"
+        ]
+      },
+      {
+        "area": "Installation",
+        "potential_risks": [
+          "Improper assembly or connection",
+          "Site-specific hazards",
+          "Compatibility issues with existing infrastructure"
+        ]
+      },
+      {
+        "area": "Certification",
+        "potential_risks": [
+          "Failure to meet regulatory standards",
+          "Delays in obtaining necessary approvals",
+          "Incomplete or inaccurate documentation"
+        ]
+      },
+      {
+        "area": "Preparation for Operation",
+        "potential_risks": [
+          "Inadequate training for operators",
+          "Incomplete system testing",
+          "Misconfiguration of operational parameters"
+        ]
+      }
+    ],
+    "things_to_consider": {
+      "environment_of_the_system": [
+        "Site-specific conditions (e.g., temperature, humidity, altitude)",
+        "Electromagnetic interference in the installation area",
+        "Accessibility for maintenance and repairs",
+        "Potential natural disasters or extreme weather conditions",
+        "Regulatory requirements specific to the installation location"
+      ],
+      "system_under_consideration": [
+        "Compatibility with existing infrastructure",
+        "Power requirements and availability",
+        "Safety measures during assembly and testing",
+        "Calibration and fine-tuning procedures",
+        "System redundancy and fail-safe mechanisms"
+      ],
+      "subsystems": [
+        "Proper handling and storage of components during packing",
+        "Protection against static electricity during unpacking",
+        "Sequence of assembly and disassembly",
+        "Interfacing between subsystems",
+        "Individual subsystem testing protocols"
+      ],
+      "from_the_past": [
+        "Legacy systems that need to be integrated or replaced",
+        "Historical failure modes and their solutions",
+        "Outdated but still relevant safety standards",
+        "Previously successful installation techniques",
+        "Lessons learned from past maintenance issues"
+      ],
+      "for_the_future": [
+        "Scalability for future upgrades or expansions",
+        "Adaptation to emerging technologies",
+        "Potential changes in regulatory landscape",
+        "Preparation for different usage scenarios",
+        "Long-term sustainability and environmental impact"
+      ]
+    }
+  }
+}

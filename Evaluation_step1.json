@@ -1,0 +1,211 @@
+{
+  "evaluation": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Identify Stakeholders",
+        "description": "Identify 5 different categories of stakeholders across product life cycle stages.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Identify stakeholders from all five categories, especially Environment Stakeholders, Past Stakeholders, and Future Stakeholders in the answers."
+            },
+            {
+              "id": 2,
+              "description": "Identify stakeholders from different stages of the product life cycle."
+            },
+            {
+              "id": 3,
+              "description": "Mention which stakeholders should be prioritized."
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "high quality means that the stakeholder categories are diverse and go through all stages of the product life cycle"
+            },
+            {
+              "id": 2,
+              "description": "low quality means that the stakeholder categories are not diverse and go through less than 3 stages of the product life cycle"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Present stakeholder with information such as title, relationship with the product,description, category, and stages."
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "title": "Analyze Stakeholder Information",
+        "description": "Identify the needs, interests, and relationships of the stakeholders.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "mention the revelant needs of stakeholders."
+            },
+            {
+              "id": 2,
+              "description": "Explore stakeholder relationships (whether aligned or contrasting)."
+            },
+            {
+              "id": 2,
+              "description": "mention stakeholder interests."
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Ensure needs are specific, measurable, and relevant to each stakeholder."
+            },
+            {
+              "id": 2,
+              "description": "Think of the need changed over time."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Formulate the needs of stakeholders in the recommended structure. See 'needs_structure' in the 'knowledge_base' section of this file."
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "title": "Translate to Requirements",
+        "description": "Translate the stakeholder's information into requirement statements.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "mention the requirement statements in the recommended structure."
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Ensure requirements are clear, concise, and actionable."
+            },
+            {
+              "id": 2,
+              "description": "Verify that requirements align with identified stakeholder needs."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Formulate the requirement statements in the recommended structure. The recommended structure can be found in the 'requirement_statement_format' section of this file."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "stakeholder_categories": [
+      {
+        "id": 1,
+        "name": "Environment Stakeholders",
+        "description": "People or entities that influence the landscape and environment where the system or product operates. Examples include city planners, regulators, and urban developers."
+      },
+      {
+        "id": 2,
+        "name": "Direct Interactors",
+        "description": "People or groups who interact directly with the system or product, such as end users, retailers, and service providers."
+      },
+      {
+        "id": 3,
+        "name": "Subsystem Interactors",
+        "description": "People responsible for building or managing subsystems, like component suppliers and maintenance services."
+      },
+      {
+        "id": 4,
+        "name": "Past Stakeholders",
+        "description": "People who previously interacted with the system or product, such as former customers who provide insights based on past experiences."
+      },
+      {
+        "id": 5,
+        "name": "Future Stakeholders",
+        "description": "New stakeholders who may interact with the system or product in the future, such as potential customers or groups interested in sustainable or alternative solutions."
+      }
+    ],
+    "product_life_cycle_stages": [
+      {
+        "id": 1,
+        "name": "Research on users, market, and regulations",
+        "description": "Focus on understanding the needs of the target users, current market trends, and the regulations that may affect the product."
+      },
+      {
+        "id": 2,
+        "name": "Technical, operational, and functional concept",
+        "description": "Development of the technical, operational, and functional aspects of the product, including its design and features."
+      },
+      {
+        "id": 3,
+        "name": "Goals and objectives for the product",
+        "description": "Establish the goals and objectives the product must meet, including performance, safety, and cost considerations."
+      },
+      {
+        "id": 4,
+        "name": "Risk analysis and function formation",
+        "description": "Identify potential risks associated with the product and develop strategies to mitigate those risks."
+      },
+      {
+        "id": 5,
+        "name": "Detailed technical design",
+        "description": "Creation of the detailed technical specifications for the product."
+      },
+      {
+        "id": 6,
+        "name": "Manufacturing",
+        "description": "The process of manufacturing the product, including the selection of materials and assembly processes."
+      },
+      {
+        "id": 7,
+        "name": "Use and maintenance",
+        "description": "The operational phase where the product is used by customers, along with the maintenance processes required to ensure its longevity."
+      },
+      {
+        "id": 8,
+        "name": "Recycle",
+        "description": "The end-of-life phase of the product, focusing on how the product can be recycled or disposed of sustainably."
+      }
+    ],
+    "needs_structure": {
+      "description": "The needs of stakeholders should be formulated using the following structure:",
+      "structure": "[A user] needs [need] in order to accomplish [goal].",
+      "example": "[Alieda, a multitasking, tech-savvy mother of 2] needs [to drive her two children to school quickly by a bike] in order to [spend more time working on her startup]."
+    },
+    "interests_definition": {
+      "description": "Interests refer to preferences of stakeholders, which are not mandatory to satisfy like needs.",
+      "example": "For example, a stakeholder might have an interest in eco-friendly materials, but it is not a required feature."
+    },
+    "relationships": {
+      "description": "Relationships between stakeholders can be aligned (working towards the same goal) or contrasting (with differing or opposing goals).",
+      "example": "For instance, a component supplier may prioritize cost-saving, while a user may prioritize quality, leading to contrasting stakeholder relationships."
+    },
+    "requirement_statement_format": {
+      "description": "Requirement statements should be formulated using the following structure:",
+      "components": [
+        {
+          "name": "Function",
+          "description": "What must be achieved"
+        },
+        {
+          "name": "Condition",
+          "description": "The condition under which the function must be achieved"
+        },
+        {
+          "name": "Constraints",
+          "description": "The limitations or restrictions that must be adhered to while fulfilling the requirement"
+        }
+      ],
+      "example": "The system [Function: shall provide real-time traffic updates] [Condition: when the user is navigating] [Constraints: without compromising battery life or data usage]."
+    }
+  }
+}

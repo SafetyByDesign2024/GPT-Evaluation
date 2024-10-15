@@ -1,0 +1,79 @@
+{
+  "evaluation": {
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Brainstorm Risk Mitigation Strategies",
+        "description": "Brainstorming strategies to reduce the likelihood or impact of hazards",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Come up with 1 strategy to mitigate the identified risks"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Quality requirement 1 for Task 1"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Presentation requirement 1 for Task 1"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "name": "Transform the strategy into a safety requirement",
+        "description": "help users to transform the strategy into a safety requirement",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Transform the strategy into 2 safety requirement"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "The safety requirement must be specific, measurable, achievable, relevant, and time-bound"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "The safety requirement must show the specific, measurable, achievable, relevant, and time-bound"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "StepOverview": {
+      "description": "This step will help users to write safety functions and requirements of a product based on risk analysis",
+    },
+    "example of risk, strategy, and safety requirement": {
+      "risk": {
+        "description": "The product may cause electric shock during operation due to faulty wiring."
+      },
+      "mitigation_strategy": {
+        "description": "Implement protective grounding and insulation."
+      },
+      "safety_requirement": {
+        "function_statement": {
+            "Specific": "The product must ground all exposed metal components that come into contact with users or electrical circuits.",
+            "Measurable": "The grounding system must ensure that electrical resistance between each metal component and the ground is no greater than 0.5 ohms, as verified by an electrical continuity test.",
+            "Achievable": "The grounding and insulation system will be implemented using industry-standard materials and processes in compliance with IEC 60364 standards.",
+            "Relevant": "This grounding and insulation system is required to prevent electric shock and ensure user safety during operation, particularly in environments where electrical exposure is possible.",
+            "Time-bound": "The grounding system must be fully tested and operational before product release, with final verification to be completed by the end of Q3 2024."
+        },
+        "verification": "Conduct electrical testing to verify that grounding and insulation meet safety standards (e.g., IEC 60335)."
+      }
+    }
+  }
+}

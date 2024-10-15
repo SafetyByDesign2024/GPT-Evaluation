@@ -1,0 +1,90 @@
+{
+  "evaluation": {
+    "description": "This step focuses on establishing a comprehensive OH&S monitoring and measurement process to continuously monitor, manage, and communicate safety risks. Users will be guided through creating a detailed plan for implementing this process based on ISO 45001 standards.",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Complete OH&S Monitoring and Measurement Process",
+        "description": "GPT will provide users the 'to-do-list' based on standard ISO 45001. Then GPT guides users through the lists and asks the user to fill in the details.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Address briefly all items in the provided to-do list"
+            },
+            {
+              "id": 2,
+              "description": "Provide detailed information for each subtask"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "No strict guidelines are provided. But the more detailed the information, the better."
+            },
+            {
+              "id": 2,
+              "description": "Suggest further improvements and other aspects to consider"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Organize information in a logical, easy-to-follow manner"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "to_do_list": [
+      {
+        "task": "Determine monitoring and measurement requirements",
+        "subtasks": [
+          "Identify legal and other requirements to be fulfilled",
+          "List activities and operations related to identified hazards, risks, and opportunities",
+          "Define progress indicators for OH&S objectives",
+          "Specify operational and other controls to be evaluated for effectiveness"
+        ]
+      },
+      {
+        "task": "Establish methods for monitoring, measurement, analysis, and performance evaluation",
+        "subtasks": [
+          "Select appropriate methods ensuring valid results",
+          "Document chosen methods and their rationale"
+        ]
+      },
+      {
+        "task": "Define OH&S performance evaluation criteria",
+        "subtasks": [
+          "Establish clear, measurable criteria",
+          "Ensure criteria align with organizational goals and industry standards"
+        ]
+      },
+      {
+        "task": "Determine monitoring and measuring schedule",
+        "subtasks": [
+          "Create a timeline for regular monitoring activities",
+          "Set specific dates or intervals for measurements"
+        ]
+      },
+      {
+        "task": "Plan analysis, evaluation, and communication of results",
+        "subtasks": [
+          "Establish a process for analyzing monitoring and measurement data",
+          "Define how and when to evaluate the analyzed data",
+          "Create a communication plan for sharing results with relevant stakeholders"
+        ]
+      },
+      {
+        "task": "Implement the monitoring and measurement process",
+        "subtasks": [
+          "Train relevant personnel on the new process",
+          "Begin data collection according to the established schedule",
+          "Regularly review and adjust the process as needed"
+        ]
+      }
+    ]
+  }
+}

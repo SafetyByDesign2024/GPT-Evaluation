@@ -1,0 +1,108 @@
+{
+  "evaluation": {
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Design and create subsystems and their interfaces",
+        "description": "Users need to create their own design with some features in mind. Brainstorm with users and guide them towards areas that are often overlooked. See 'AspectsToConsider' for more information.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "(at least) one subsystem is elaborated in further design focusing on internal interactions and safety control system (parts e.g. sensors, logic, output) to reduce the risks"               
+            },
+            {
+              "id": 2,
+              "description": "elevant past design failures and possible future functions of the desired subsystem are considered"               
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Do not evaluate the quality of the design idea but ask reflective questions for users to evaluate themselves. See 'reflective_questions' for more information."
+            }
+          ],
+          "reflective_questions": {
+            "Technological Environment": [
+              "Have you accounted for external systems, environments, and regulatory standards that your system will interact with?",
+              "Are there any external safety protocols you have integrated into your design to ensure safe interaction with other systems?"
+            ],
+            "Layout of Subsystems": [
+              "Is your subsystem arrangement designed for easy updates and safe operation?",
+              "Do your subsystems interact seamlessly without conflicting functionalities?"
+            ],
+            "Components and Subsystem Interfaces": [
+              "How have you addressed potential failure points at the interfaces between components within a subsystem?",
+              "Are the components within each subsystem designed to meet both functional and safety requirements?"
+            ],
+            "Future Wear and Replacement": [
+              "Have you considered the lifecycle of each component, including how it will wear out over time?",
+              "Is the system designed to allow for easy replacement or upgrades of components?"
+            ]
+          }
+        }
+      },
+      {
+        "id": 2,
+        "name": "Explore next stage or component",
+        "description": "Task continues, focusing on a new aspect or a different stage",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Ensure no overlap with previous responses"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Meet task requirements for this stage"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Summarize inputs clearly"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "id": 7,
+    "procedure": "To design and create subsystems and their interfaces",
+    "goal": "help users to come up with their own design",
+    "content": {
+      "AspectsToConsider": [
+        {
+          "Aspect": "Consider the Environment of the System (Technological Environment)",
+          "WhatItMeans": "The system's design must account for the technological environment in which it operates, including external systems, regulatory standards, and environmental factors like weather or physical space.",
+          "Example": "In designing a smart grid, the system must integrate seamlessly with existing power infrastructure and comply with energy safety standards, ensuring overload protection and continuity during outages."
+        },
+        {
+          "Aspect": "Design the Layout of Subsystems and Component Interfaces",
+          "WhatItMeans": "The system design should ensure that subsystems are arranged properly, with clear interfaces between them. These interfaces should function efficiently and safely, facilitating smooth interaction between components.",
+          "Example": "In a car braking system, subsystems such as the pedal, hydraulic lines, and calipers must interact without error. The interface between the pedal and the hydraulic system must ensure the brake functions promptly when pressed."
+        },
+        {
+          "Aspect": "Design Components and Subsystem Interfaces",
+          "WhatItMeans": "Each subsystem and its components must be designed to meet functional and safety requirements. This includes ensuring that interfaces between the components of each subsystem are secure and that each component operates reliably.",
+          "Example": "In aircraft navigation, subsystems like communication and navigation must interface efficiently, ensuring that communication delays do not affect flight data transmission."
+        },
+        {
+          "Aspect": "Plan for Future Wear and Replacement",
+          "WhatItMeans": "The design must account for the wear and tear of components over time, ensuring that they can be easily replaced or upgraded. The system should also be adaptable to future technological advances or changes in user needs.",
+          "Example": "In a wind turbine, components like rotor blades or gearboxes must be designed for easy replacement, reducing downtime during maintenance. The design should also allow for integration of future efficiency improvements."
+        }
+      ],
+      "Suggestions": [
+        {
+          "Suggestion": "Learn from Legacy Systems and Unidentified Hazards",
+          "WhatItMeans": "Reviewing legacy systems and identifying previously undetected hazards can improve the current design. Learning from past experiences helps avoid repeating mistakes and incorporates proven solutions into the design process.",
+          "Example": "When designing a new nuclear control system, lessons from previous systems can reveal security vulnerabilities or performance bottlenecks, leading to a safer design."
+        }
+      ]
+    }
+  }
+}

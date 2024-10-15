@@ -1,0 +1,294 @@
+{
+  "evaluation": {
+    "tasks": [
+      {
+        "id": 0,
+        "name": "Choose Focus Tasks",
+        "description": "Users can choose to focus on either task 1, 2, 3, 4, or 5. In an ideal situation, all tasks should be completed. However, in this training context, completing a few tasks is acceptable.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Select at least one task to focus on"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Understand the scope of each task"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Clearly communicate chosen tasks"
+            }
+          ]
+        }
+      },
+      {
+        "id": 1,
+        "name": "Analyze Environmental and Cultural Hazards",
+        "description": "GPT will ask users to describe different use environments of their product. GPT will continue to describe the key features of those environments based on information from 'example of different environments of a bike'. GPT will ask the user to consider what hazards they would face in those environments and how they would address them.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Describe at least three different use environments"
+            },
+            {
+              "id": 2,
+              "description": "Identify hazards for each environment to users"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "High quality means that users need to describe how the chosen envrionements affect how users interact with the product and how the hazards will happen to users "
+            },
+            {
+              "id": 2,
+              "description": "Propose relevant solutions to identified hazards"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Clearly structure environment descriptions and hazard analyses"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "name": "Assess Health Hazards for Operators",
+        "description": "Describe health risks for system operators, considering both short-term and long-term exposure to various elements of the system.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Identify both short-term and long-term health risks"
+            },
+            {
+              "id": 2,
+              "description": "Cover various types of health hazards both long term and short term"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Describe convincingly the health risks for operators with references. Consider the severity and likelihood of each risk"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Organize health risks in a clear, categorized manner"
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "name": "Evaluate Subsystem Workforce Requirements",
+        "description": "Describe the interaction between humans and the product, creating detailed scenarios to identify potential problems and solutions.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Cover interactions between 3 different kinds of users and the same sub systems"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Describe how different users can interact with the same sub systems"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Present scenarios and analyses in a logical, easy-to-follow manner"
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "name": "Incorporate Historical Incident Lessons",
+        "description": "Research and analyze similar incidents related to the product to inform design and safety considerations.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Research at least three historical incidents"
+            },
+            {
+              "id": 2,
+              "description": "Identify key lessons from each incident"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Draw conclusions how the current product can be improved by the lessons learned from the incidents"
+            },
+            {
+              "id": 2,
+              "description": "In the description, users describe the behaviours and why accidents happened to users"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Present findings in a clear, concise manner"
+            }
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "name": "Plan for Future Skill Development",
+        "description": "Brainstorm how future trends and technological advancements will change the skills and needs of users.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Consider at least 1 future trends or technologies"
+            },
+            {
+              "id": 2,
+              "description": "Analyze impacts on both workforce and system"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Provide detailed analysis how the technology will change the skills of the users"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Present ideas in a structured, forward-looking manner"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "example of different environments of a bike": {
+      "environments": [
+        {
+          "name": "Carried on a Train",
+          "key_features": [
+            "Space Constraints: Limited space on crowded trains.",
+            "Crowds: Busy stations, making it hard to maneuver.",
+            "Restrictions: No riding in stations, must walk with or carry the bike.",
+            "User Behavior: Rushed users, navigating tight areas."
+          ]
+        },
+        {
+          "name": "Biking in a Park",
+          "key_features": [
+            "Open Spaces: Wide paths, some paved, some rough.",
+            "Pedestrian Traffic: Shared space with walkers, kids, and pets.",
+            "Relaxed Atmosphere: Leisurely pace, focused on recreation.",
+            "Environmental Factors: Weather and seasonal changes affect terrain."
+          ]
+        },
+        {
+          "name": "Mountain Biking (Rough Terrain)",
+          "key_features": [
+            "Challenging Terrain: Rocky, uneven, steep trails.",
+            "Remote: Far from repair services, self-sufficiency needed.",
+            "Physical Demand: High exertion, requiring endurance.",
+            "Safety Concerns: Higher injury risk, protective gear required."
+          ]
+        },
+        {
+          "name": "Stored at Home",
+          "key_features": [
+            "Limited Space: Need compact storage (closet, small apartment).",
+            "Accessibility: Easy to store and retrieve, possibly foldable.",
+            "Indoor Protection: Must be clean to avoid damaging home surfaces.",
+            "Security: Prone to theft in shared spaces, needs locks."
+          ]
+        },
+        {
+          "name": "Bike for Commuting in Rainy/Wet Conditions",
+          "key_features": [
+            "Wet Surfaces: Slippery roads, slip-resistant tires needed.",
+            "Visibility: Reduced visibility, requires lights and reflectors.",
+            "Waterproof Gear: Users need rain-resistant clothing and bags.",
+            "Maintenance: Frequent cleaning to prevent rust and wear."
+          ]
+        }
+      ]
+    },
+    "health_hazards": {
+      "types": [
+        {
+          "name": "Physical Health Hazards",
+          "description": "Affect the body through forces or conditions",
+          "examples": [
+            "Poor posture while cycling",
+            "Noise from traffic",
+            "Vibration from rough terrain",
+            "Extreme temperatures during outdoor rides"
+          ]
+        },
+        {
+          "name": "Chemical Health Hazards",
+          "description": "Caused by exposure to harmful chemicals",
+          "examples": [
+            "Toxic fumes from vehicle exhaust",
+            "Skin irritants from cleaning solvents used in maintenance"
+          ]
+        },
+        {
+          "name": "Biological Health Hazards",
+          "description": "Caused by organisms",
+          "examples": [
+            "Infections from contaminated water splashed during rides",
+            "Allergies from pollen while cycling outdoors"
+          ]
+        },
+        {
+          "name": "Environmental Health Hazards",
+          "description": "Arise from environmental conditions",
+          "examples": [
+            "Air pollution in urban cycling routes",
+            "Sun exposure during long rides"
+          ]
+        },
+        {
+          "name": "Psychosocial Health Hazards",
+          "description": "Impact mental health",
+          "examples": [
+            "Stress from navigating heavy traffic",
+            "Fatigue from long-distance cycling"
+          ]
+        },
+        {
+          "name": "Mechanical Health Hazards",
+          "description": "Related to machinery or systems",
+          "examples": [
+            "Crashes due to equipment failure",
+            "Pinch points in bike chains during maintenance"
+          ]
+        }
+      ]
+    },
+    "trending_advanced_technologies": [
+      "Autonomous Vehicles",
+      "Artificial Intelligence (AI) & Machine Learning",
+      "Internet of Things (IoT)",
+      "Renewable Energy Integration",
+      "Smart Dust",
+      "Advanced Materials",
+      "Augmented Reality (AR) & Virtual Reality (VR)"
+    ]
+  }
+}

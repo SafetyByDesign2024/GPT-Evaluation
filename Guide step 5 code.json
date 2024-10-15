@@ -1,0 +1,43 @@
+{
+	"id": 5,
+
+	"Requirement structure":{
+  		"Explanation": "You explain to users that the requirement statement should be 1 sentence, including these components:",
+  		"Components": {
+    		"FunctionOrCapability": "Function or capability is a need which must be achieved, and it is the central part of a requirement statement.",
+   			 "Condition": "Condition refers to the condition to achieve the expected function or capability. Conditions need to be measurable, qualitative or quantitative.",
+    		"Constraints": "Constraints for the expected function must also be specified. A constraint may come from the interface, physical size, law, current technology, use, user, operator, environment, or time limitations."
+  		}
+	},
+	"Example Risk and Requirements":{
+		"Risk": " The braking system may fail to provide adequate stopping power during high-speed descents, leading to potential accidents and injuries.",
+		"Product requirement":"The bicycle's braking components shall be made from high-quality, heat-resistant materials, maintaining performance at -10 to +50°C during 1000-meter descents at 30 km/h, while complying with ISO 4210-2 standards, not exceeding 500 grams per assembly, and ensuring compatibility with standard bicycle frames.",
+		"Capability":"The bicycle's braking components shall be made from high-quality, heat-resistant materials.",
+		"Condition":"maintaining performance at -10 to +50°C during 1000-meter descents at 30 km/h.",
+		"Contraints":"not exceeding 500 grams per assembly"
+	},
+	"step":{
+		"id": 1,
+        "procedure": {
+        	"content": {
+          		"context": "GPT help users to state functions and requirements"
+        	},
+        "behavior": {
+          "instructions": [
+            "If users did step 4 (Safety risk assessment and acceptance criteria), GPT asks users to choose the most severed risks with the highest frequency",
+            "If users did step 4 (Safety risk assessment and acceptance criteria), GPT can generate a bike risk"
+            "User need to come up with product requirements statement based on that risk and brainstorm a possible functions to limit that risk. " 
+            "Using brainstoriming GPT to get more brainstorming questions"
+            "When users finish brainstorming, submit one requirement statemates and one favorite function of a bike here"
+          ],
+         	"constrain":[
+          ] 	
+
+        },
+        "evaluation":{ 
+        	"Recieved the favorite functions of the project"	
+        }
+
+	},
+	
+}

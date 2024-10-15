@@ -1,0 +1,79 @@
+{
+	"evaluation": {
+		"id": 11,
+		"title": "Exploring Product Usage",
+		"description": "In this step, we analyse operation scenarios in depth. Most of the time, designers care about the perfect use scenarios but they might pay little attention on misuse and disuse scenarios. Therefore, in this step, we look into different situations to understand the product's performance, considering human, technical, and environmental factors.",
+		"tasks": [
+			{
+				"id": 1,
+				"name": "Brainstorm Scenarios",
+				"description": "Brainstorm with users to find 4 scenarios one by one. Each scenario should state clearly environmental factors, interaction between humans and their product, maintenance and support issues for sub systems.",
+				"requirements": {
+					"completeness": "All 4 scenarios (past use, future use, misuse, disuse) must be covered",
+					"quality": "Each scenario should state clearly environmental factors, interaction between humans and their product, maintenance and support issues for sub systems",
+					"presentation": "Clear and organized presentation of each scenario"
+				}
+			},
+			{
+				"id": 2,
+				"name": "Evaluate Product Performance",
+				"description": "Guide users through evaluating how the product performs under the different scenarios identified in task 1. Help users identify potential risks during operation in each scenario. Assist in analyzing the impact of environmental factors, human interactions, and technical aspects on product performance.",
+				"requirements": {
+					"completeness": "Mention in case of any risks in any scenario, how the risks are considered and controlled or communicated",
+					"quality": "Thorough analysis of risks and impacts",
+					"presentation": "Clear presentation of findings for each scenario"
+				}
+			},
+			{
+				"id": 3,
+				"name": "Adjust Product Design",
+				"description": "Help users identify new features or functions that should be added to increase user safety based on the scenario analysis.",
+				"requirements": {
+					"completeness": "Identification of safety improvements for all relevant scenarios",
+					"quality": "Proposed features should directly address identified risks",
+					"presentation": "Clear explanation of how each new feature improves safety"
+				}
+			}
+		]
+	},
+	"knowledge_base": {
+		"exampleEnvironmentalFactors": {
+			"physicalEnvironmentalFactors": {
+				"weatherConditions": ["rain", "snow and ice", "heat", "sun exposure", "wind", "air quality"],
+				"terrainTypes": ["Urban", "Mountain"],
+				"storageConditions": ["Indoor", "Outdoor"],
+				"countries": ["western countries such as the Netherlands, Germany", "Eastern countries like Vietnam, China"],
+				"time": ["nowadays", "in the near future", "in the far future"]
+			}
+		},
+		"scenarios": {
+			"pastUse": {
+				"reasons": "We look into past use because we want to see how accidents could happen in the past."
+			},
+			"futureUse": {
+				"reasons": "We want to see how our design can adapt to the possible change in future landscape"
+			},
+			"misuse": {
+				"reasons": "We want to anticipate as many unintentional uses in order to prevent unexpected accidents"
+			},
+			"disuse": {
+				"reasons": "We want to see the impact of the product on environments and users when it is not actively in use"
+			}
+		},
+		"gptInstructions": {
+			"brainstorming": [
+				"GPT will brainstorm with users to find 4 scenarios one by one. The scenarios are presented at 'scenarios' section",
+				"Each scenario should state clearly environmental factors, interaction between humans and their product, maintenance and support issues for sub systems",
+				"GPT will constantly ask for more information to make the scenarios more specific"
+			],
+			"evaluation": [
+				"GPT will guide users through evaluating how the product performs under the different scenarios identified in task 1",
+				"GPT will help users identify potential risks during operation in each scenario",
+				"GPT will assist in analyzing the impact of environmental factors, human interactions, and technical aspects on product performance"
+			],
+			"design": [
+				"GPT will help users identify new features or functions that should be added to increase user safety based on the scenario analysis"
+			]
+		}
+	}
+}

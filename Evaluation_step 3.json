@@ -1,0 +1,293 @@
+{
+  "evaluation": {
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Prioritize Product Objectives",
+        "description": "Choose and prioritize at least 3 focused objectives for the product, with safety being pre-selected.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "At least 3 objectives are chosen, including safety."
+            },
+            {
+              "id": 2,
+              "description": "Objectives are ranked from 1 to 3 in importance."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Objectives are clearly listed with their rankings."
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "name": "Analyze Objective Relationships",
+        "description": "Define how the chosen objectives align or contrast with each other.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "All possible pairs of objectives are analyzed."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Relationships are presented in the format: Objective 1 - Objective 2: [++/+/0/-/--]"
+            }
+          ]
+        }
+      },
+      
+      {
+        "id": 3,
+        "name": "Objective Comparison",
+        "description": "Compare selected objectives to past or existing objectives and think if they are aligned to future trends (e.g. sustainability, climate change).",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "compare all selected objectives to past or existing objectives and think if they are aligned to future trends (e.g. sustainability, climate change)."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "highlight the differences and similarities between the selected objectives and past or existing objectives."
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "name": "Reflect on Objective Impacts",
+        "description": "Consider the impact of prioritized objectives on stakeholders, products, and the environment.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Impacts on stakeholders, products, and environment are all addressed."
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Reflections demonstrate the impact of the objective on stakeholder's needs and satisfaction, the quality of the product safety, and the short and long term effects on the environment."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Reflections are organized under appropriate categories (impact_on_stakeholders, impact_on_products, impact_on_environment)."
+            }
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "name": "Develop Hierarchical Objective Breakdown",
+        "description": "Create a hierarchical decomposition of objectives into sub-objectives.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "At least one objective is broken down into multiple levels of sub-objectives."
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Sub-objectives are specific, measurable, and actionable, and complied with standards and regulations."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Breakdown is presented in a clear, hierarchical format."
+            }
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "name": "Translate Objectives to Requirements",
+        "description": "Develop product requirements based on chosen sub-objectives and relevant regulations.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "At least one sub-objective is translated into specific requirements."
+            },
+            {
+              "id": 2,
+              "description": "Relevant directives or regulations are identified and incorporated."
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Requirements are clear, specific, and aligned with both objectives and regulations."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Requirements are presented in a structured format, linking to relevant objectives and regulations."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "step_overview": {
+      "introduction": "Every product has specific goals like safety, cost, and innovation, which can sometimes conflict (e.g., safety vs. cost). In this step, you'll prioritize these goals as a designer through two exercises.",
+      "exercises": {
+        "reflect_on_impact": {
+          "description": "Consider how prioritizing certain goals affects stakeholders, the product, and the environment."
+        },
+        "specify_and_translate_goals": {
+          "description": "Clearly define your goals and convert them into detailed product requirements by reviewing relevant regulations, directives, and standards.",
+          "purpose": "This helps ensure your design aligns with both your priorities and industry guidelines."
+        }
+      }
+    },
+    "product_objectives": [
+      {
+        "id": 1,
+        "objective": "Safety",
+        "description": "Ensuring product safe to use"
+      },
+      {
+        "id": 2,
+        "objective": "Cost Efficiency",
+        "description": "Manage production costs while maintaining quality"
+      },
+      {
+        "id": 3,
+        "objective": "Product Performance",
+        "description": "Consider how high-quality a product will be"
+      },
+      {
+        "id": 4,
+        "objective": "Durability",
+        "description": "Consider how long the lifespan of a product is"
+      },
+      {
+        "id": 5,
+        "objective": "Innovation",
+        "description": "Consider the aspect of using innovative features and technologies"
+      },
+      {
+        "id": 6,
+        "objective": "Usability",
+        "description": "How easy-to-use a product will be"
+      },
+      {
+        "id": 7,
+        "objective": "Environmental impact",
+        "description": "Examine the impact of a product on the surrounding environment"
+      },
+      {
+        "id": 8,
+        "objective": "Aesthetic Appeal",
+        "description": "Ensure the product has a visually appealing design that attracts customers"
+      },
+      {
+        "id": 9,
+        "objective": "Scalability",
+        "description": "How easy for a product can be scaled up for mass production without compromising quality"
+      },
+      {
+        "id": 10,
+        "objective": "Cultural acceptance",
+        "description": "How acceptable the product can be in different countries and culture"
+      }
+    ],
+    "self_reflection_questions": {
+      "impact_on_stakeholders": [
+        "How do my priorities in objectives align with the needs and expectations of our targeted customers?",
+        "How do my priorities impact the working conditions and job satisfaction of our employees?",
+        "Are we considering the benefits and values of our suppliers?"
+      ],
+      "impact_on_products": [
+        "Are we compromising on quality or performance to achieve other objectives like cost efficiency? What is the impact of our choice",
+        "How my priority contribute to the succeed of the products, given the current problems of the companies, or old products?",
+        "What kind of products are we making? Does it align with the ethical values of our company?"
+      ],
+      "impact_on_environment": [
+        "How do my priorities support sustainable practices in product design and manufacturing?",
+        "How can society be affected from my priority?",
+        "How do my priorities shape the industry in the future?"
+      ]
+    },
+    "hierarchical_decomposition_method": {
+      "general_process": [
+        "Start with the main goal.",
+        "Break it down into major components or areas.",
+        "Further divide each component into smaller, actionable tasks."
+      ],
+      "example": {
+        "main_goal": "Creating the Safest Bike Ever",
+        "major_areas": [
+          "Bike components such as braking system, frame durability, rider protection",
+          "Users education and training",
+          "Further improvement"
+        ],
+        "small_components": {
+          "further_improvement": {
+            "implement_feedback_mechanism": {
+              "steps": [
+                "Set up channels for user feedback.",
+                "Regularly review feedback for improvements."
+              ]
+            },
+            "analyze_accident_data_for_improvements": {
+              "steps": [
+                "Collect and analyze data from real-world incidents.",
+                "Use insights to refine product design and safety features."
+              ]
+            }
+          },
+          "user_education_and_training": {
+            "create_instructional_materials": {
+              "steps": [
+                "Develop clear and concise user manuals.",
+                "Include safety guidelines and best practices."
+              ]
+            },
+            "offer_safety_workshops": {
+              "steps": [
+                "Organize training sessions for users.",
+                "Provide hands-on safety demonstrations."
+              ]
+            }
+          }
+        }
+      },
+      "requirement_statement_format": {
+        "description": "Requirement statements should be formulated using the following structure:",
+        "components": [
+          {
+            "name": "Function",
+            "description": "What must be achieved"
+          },
+          {
+            "name": "Condition",
+            "description": "The condition under which the function must be achieved"
+          },
+          {
+            "name": "Constraints",
+            "description": "The limitations or restrictions that must be adhered to while fulfilling the requirement"
+          }
+        ],
+        "example": "The system [Function: shall provide real-time traffic updates] [Condition: when the user is navigating] [Constraints: without compromising battery life or data usage]."
+      }
+    }
+  }
+  }

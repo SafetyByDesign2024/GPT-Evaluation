@@ -1,0 +1,109 @@
+{
+  "evaluation": {
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Implement PDCA Cycle for System Maintenance",
+        "description": "Apply the Plan-Do-Check-Act cycle to establish and improve a maintenance system for ensuring operational quality and addressing system issues.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Address all four phases of the PDCA cycle: Plan, Do, Check, and Act"
+            },
+            {
+              "id": 2,
+              "description": "Consider the human, system, subsystem, and environmental factors while practicing the PDCA cycle"
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "High quality maintenance plan should be able to address all topics in 'things_to_consider'."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Present the maintenance plan in a structured format following the PDCA cycle"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "step_overview": {
+      "id": 12,
+      "procedure": "This step focuses on how to ensure the system meets its intended quality during its operational lifetime and how to fix the system in case of disruption or other issues."
+    },
+    "maintenance_considerations": {
+      "context": "General description of the task at hand.",
+      "things_to_consider": {
+        "Failure prevention/maintenance": [
+          "Logistics for system maintenance",
+          "Best practices for storing critical components",
+          "Environmental challenges in maintenance",
+          "Impact of physical environment on equipment",
+          "Historical records of proper storage",
+          "Future technological advances in maintenance"
+        ],
+        "System failures": [
+          "Steps for unexpected component failures",
+          "Strategies for quick repairs",
+          "Minimizing downtime during maintenance",
+          "Customer support during emergencies",
+          "Lessons from past system failures",
+          "Future design for efficient emergency repairs"
+        ],
+        "Subsystem failures": [
+          "Skills and tools for effective monitoring",
+          "Human role in data interpretation",
+          "Monitoring tools and methods",
+          "Risks of undetected subsystem failures",
+          "Impact of operating environment on subsystems",
+          "Historical lessons on real-time monitoring",
+          "Future of predictive maintenance"
+        ]
+      }
+    },
+    "PDCACycle": [
+      {
+        "Phase": "Plan",
+        "Objective": "Establish the goals of the maintenance system, such as ensuring system reliability, minimizing downtime, and addressing both immediate and long-term maintenance needs.",
+        "Actions": [
+          "Identify specific maintenance objectives (e.g., extending the lifecycle of equipment, improving system safety).",
+          "Define the necessary resources (e.g., tools, personnel, spare parts) and outline the maintenance schedule.",
+          "Assess risks (e.g., unexpected system failures, resource shortages) and identify opportunities (e.g., introducing predictive maintenance technologies) to enhance system reliability."
+        ]
+      },
+      {
+        "Phase": "Do",
+        "Objective": "Implement the planned maintenance activities.",
+        "Actions": [
+          "Carry out preventive and corrective maintenance as scheduled.",
+          "Ensure that maintenance staff are trained and have access to the required tools and spare parts.",
+          "Monitor system performance during and after maintenance to ensure optimal functioning."
+        ]
+      },
+      {
+        "Phase": "Check",
+        "Objective": "Monitor the effectiveness of the maintenance plan and compare results against established objectives.",
+        "Actions": [
+          "Use key performance indicators (KPIs) such as Mean Time Between Failures (MTBF) and Mean Time to Repair (MTTR) to measure the success of the maintenance activities.",
+          "Compare current performance with historical data to identify trends.",
+          "Review whether the maintenance tasks are meeting the desired reliability and safety standards."
+        ]
+      },
+      {
+        "Phase": "Act",
+        "Objective": "Make improvements to the maintenance system based on performance data and feedback.",
+        "Actions": [
+          "Adjust the maintenance schedule or tasks based on observed system weaknesses or evolving requirements.",
+          "Implement new technologies (e.g., predictive maintenance systems) if opportunities for improvement are identified.",
+          "Ensure continuous training and development for maintenance personnel to address any gaps in skill or knowledge."
+        ]
+      }
+    ]
+  }
+}

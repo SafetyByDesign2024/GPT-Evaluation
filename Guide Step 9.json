@@ -1,0 +1,113 @@
+{
+  "id": 9,
+  "procedure": "this step has two parts. Part 1 is production and integration, which focuses on identify the production envrionment, and planning how to produce sub-systems to meet the set requirements. The second part focuses on the quality control of the environments and systems, considering about the history of the subsystem and future demand",
+
+  "steps": [
+    {
+      "id": 1,
+      "procedure": {
+        "content": {
+          "context": "uers already know what to design but do not know how to set up the production line and how to test their products. This step are meant to provide users a lot of different aspects to consider, should not focus too much on detail analysis",
+
+          "production_environment_standards": [
+            "Temperature Control",
+            "Humidity Control",
+            "Air Quality and Ventilation",
+            "Lighting",
+            "Noise Control",
+            "Cleanliness and Dust Control",
+            "Ergonomic Workstations",
+            "Floor Space and Workflow",
+            "Safety Signage and Hazard Marking",
+            "Access Control and Security",
+            "Static Electricity Control (ESD)",
+            "Material Handling and Storage",
+            "Fire Safety and Emergency Preparedness"
+          ],
+          "examples":{
+            "worker health":" If the production environment lacks proper air quality control and ventilation, workers may be exposed to harmful fumes from solvents, adhesives, or paints used in bike manufacturing.",
+            "product quality": "In a production environment with high humidity levels above 60%, metal components, such as bike frames, chains, and screws, are more prone to corrosion during or after production. The ideal humidity level for metal component manufacturing should typically be below 50% to minimize the risk of rust and corrosion."
+          },
+          "guiding questions":{
+            "past experience":[
+              "Have there been any recurring issues with certain materials or components in the production process? If so, how were they resolved?",
+              "What changes or improvements were made to the production environment based on past product defects or failures?",
+              "How has the production environment been adapted over time to handle new materials, processes, or technologies based on previous experience?"
+            ],
+            "future demand":[
+              "What changes or upgrades will be required in the production environment to meet future sustainability standards for energy use, waste reduction, or emissions?",
+              "How can the production environment be optimized to sustainably scale production?",
+              "Are there any upcoming sustainability regulations or industry certifications that will require adjustments to the current production environment?"
+            ]
+          }
+        },
+        "behavior": {
+          "instructions": [
+            "introduce the production_environment_standards for users as suggestions for what aspects they can consider when designing production envrionment",
+            "remind them to consider the condition of the current production envrionment, past accidents and future sustainable standards by providing guiding questions"
+            "give examples of how production environment can affect product quality"
+          ]
+          
+        }
+      },
+      "evaluation": [
+        
+      ]
+    },
+    {
+      "id": 2,
+      "procedure": {
+        "content": {
+          "context": "Users want to develop the seamless and safe integration process",
+          "guiding questions":{
+            "integration":[
+              "Are standardized components and protocols being used to reduce integration issues?",
+              "Have redundancy and safety mechanisms been implemented in case of subsystem failure?",
+              "Have system simulations been performed to test the performance of the fully integrated system before physical assembly?",
+              "After integration, is the system regularly reviewed and updated to address performance or safety issues?"
+            ]
+          },
+          "integration test":[
+            
+            {
+              "type": "Interface Testing",
+              "Purpose": "Ensures that different subsystems can communicate and interact correctly through their interfaces (such as data transfer, electrical, or mechanical connections).",
+              "WhyItsPopular": "Interface issues are common in complex systems, and ensuring smooth communication between components is crucial for functionality.",
+              "Example": "Testing the interface between a bike’s braking system and its electronic display to ensure proper communication."
+            },
+            {
+              "type": "Functional Integration Testing",
+              "Purpose": "Verifies that the integrated system works according to its intended functionality, combining all subsystems as per the specifications.",
+              "WhyItsPopular": "It confirms that the integrated subsystems perform the expected tasks when operating together.",
+              "Example": "Testing that the braking system correctly triggers the motor cut-off and brake lights on an electric bike."
+            },
+            {
+              "type": "Performance Testing",
+              "Purpose": "Evaluates the performance of the integrated system under different conditions, ensuring that it meets required performance standards.",
+              "WhyItsPopular": "Ensures that the integrated system can handle various operating scenarios without lag or failure.",
+              "Example": "Testing a bike's drivetrain and brakes to ensure they work efficiently together at high speeds or under heavy loads."
+            },
+            {
+              "type": "Stress Testing",
+              "Purpose": "Assesses the system’s durability and performance under extreme conditions to identify any potential weaknesses.",
+              "WhyItsPopular": "It helps determine how robust the system is and identifies points of failure under stress.",
+              "Example": "Simulating steep terrain and heavy load conditions to test how the bike's suspension, frame, and brakes hold up under pressure."
+            }
+          ]
+          
+        },
+        "behavior": {
+          "instructions": [
+            "Provide guiding questions and some test examples to help students gain perspectives"
+          ],
+          "constrain": [
+            
+          ]
+        }
+      },
+      "evaluation": [
+        
+      ]
+    }
+  ]
+}

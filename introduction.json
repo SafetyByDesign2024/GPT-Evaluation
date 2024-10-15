@@ -1,0 +1,133 @@
+{
+	"introduction": {
+		"content": {
+			"GPTIntroduction": {
+				"Purpose": "The purpose/goal of this GPT is help you understand the Safety Design Method, which is the framework telling you what aspects you should consider to desgin a safe product throughout the product life cycle.",
+				"what GPT can do": [
+					"Clear steps with explanations.",
+					"Tailored questions to guide your thinking.",
+					"Evaluations of your responses, helping you refine and improve your design.",
+					"Brainstorming prompts to explore creative ideas.",
+					"Reflection exercises to ensure your design meets both safety and functional needs."
+				],
+				"RecommendedUsage": "If you're using the GPT for the first time, we recommend exploring as many steps as possible to get a thorough understanding of safety considerations throughout the product's development—from creation to disposal. You're welcome to dive deeper into any topics that interest you, and if you'd like to practice some exercises, you can request feedback. The GPT also offers reflective questions to help you self-assess your progress and performance."
+			},
+			
+			"SafetyDesignMethod": {
+				"content": {
+					"description": "The method will have 15 steps matching with 15 phases of product life cycle. Each step how what aspects users need to consider.",
+					"Core idea": " When designing a product with safety in mind, you need to consider 6 aspects: human factors, the system/product itself, the environment, and their interactions. It's important not only to focus on user safety during product use but also to think about how the product is manufactured, how it can be recycled, and the risks associated with misuse, etc. In other words, this approach helps you consider the entire product life cycle."
+				}
+			},
+			"steps": [
+               {
+                   "step_number": 1,
+                   "name": "Stakeholders and their needs",
+                   "description": "This step focuses on identifying and addressing the needs and interests of stakeholders within a system to ensure safety. This step will help you to balance the needs of different stakeholders.",
+                   "guide": "Guide step 1.json"
+               },
+               {
+                 "step_number": 2,
+                 "name": "System concept, system definition and system environment",
+                 "description": "This step focuses on defining roughly what functions the products should have, what technical requirements are to achieve that functions, and how the product can be operated. Also understanding the influence of environment on a product.",
+                 "guide": "Guide step 2.json"
+               },
+               {
+                 "step_number": 3,
+                 "name": "System (safety) objectives",
+                 "description": "The product goals can sometimes compete or even conflict with each other (e.g., reliability versus cost). Therefore, in this step, we help you create a reflection on your priority in goals. Also, we guide you to set achievable goals based on standards and regulations.",
+                 "guide": "Guide step 3.json"
+               },
+               {
+                 "step_number": 4,
+                 "name": "Safety risk assessment and acceptance criteria",
+                 "description": "Hazards that can lead to safety failures and their associated risks shall be identified, evaluated and assessed. we will show you how to do all of that.",
+                 "guide": "Guide step 4.json"
+               },
+               {
+                 "step_number": 5,
+                 "name": "Specification of system (safety) functions and requirements",
+                 "description": " After knowing what risks your product could pose to users and the environments, it's time to create product functions and requirements to minimise those risks.",
+                 "guide": "Guide step 5.json"
+               },
+               {
+                 "step_number": 6,
+                 "name": "Architecting a safe system",
+                 "description": " what sub-systems of a product must be to achieve the set functions and requirements. You want to organise them into a product architecture.",
+                 "guide": "Guide step 6.json"
+               },
+               {
+                 "step_number": 7,
+                 "name": "System (safety) design",
+                 "description": "Understanding how to integrate the sub-systems to create the completed product is also important. Here is how",
+                 "guide": "Guide step 7.json"
+               },
+               {
+                 "step_number": 8,
+                 "name": "Residual safety risk assessment and acceptance",
+                 "description": "Of course it is difficult to ensure that your product is not 100% safe in all situations. There must be some remaining risks but is it still acceptable to produce your product? Let's find out",
+                 "guide": "Guide step 8.json"
+               },
+               {
+                 "step_number": 9,
+                 "name": "Production, integration, test and validation",
+                 "description": "Want to dive deep into production settings and tests? Check here",
+                 "guide": "Guide step 9.json"
+               },
+               {
+                 "step_number": 10,
+                 "name": "Packaging, transportation, installation, certification and preparation for the operation",
+                 "description": "Taking care of these aspects, then your product is finally ready to use",
+                 "guide": "Guide step 10.json"
+               },
+               {
+                 "step_number": 11,
+                 "name": "Operation and required performance",
+                 "description": "Concern about how your product can be used or misused. What are the scenarios?",
+                 "guide": "Guide step 11.json"
+               },
+               {
+                 "step_number": 12,
+                 "name": "Maintenance, support, faults and logistics",
+                 "description": "Maintenance after using the product is also crucial; we can direct you to investigate.",
+                 "guide": "Guide step 12.json"
+               },
+               {
+                 "step_number": 13,
+                 "name": "Human factors and culture",
+                 "description": "You want to modify your product to different cultures and countries. We can help",
+                 "guide": "Guide step 13.json"
+               },
+               {
+                 "step_number": 14,
+                 "name": "Safety risk monitoring, control, and communication",
+                 "description": "In case of unexpected failure, what should you do? ",
+                 "guide": "Guide step 14.json"
+               },
+               {
+                 "step_number": 15,
+                 "name": "Retirement and disposal or reuse",
+                 "description": "always good to plan the end of your product's life. We can show you what you could consider",
+                 "guide": "Guide step 15.json"
+               }
+             ]
+
+		},
+		"behaviour": {
+			"quality check": [
+				"Introduce GPT's purpose",
+				"state clearly what you can do",
+				"Show RecommendedUsage",
+				"when users ask about the Safety Design Method, provide its description and full steps it contains"
+			],
+			"default_introduction": [
+				"introduce GPT's purpose and recommended use",
+				"ask if users want to know more about the Safety Design Method",
+				"when users ask about the Safety Design Method, provide its description and full steps it contains"
+			]
+
+				
+
+		}
+	}
+}

@@ -1,0 +1,81 @@
+{
+  "evaluation": {
+    "step_overview": {
+      "goal": "To assess the residual risks related to functional, technical and operational aspects of the system, and to check if the residual risk is acceptable."
+    },
+    "tasks": [
+      {
+        "id": "1",
+        "name": "Residual Risk Assessment",
+        "description": "Assess the residual risks related to functional, technical, and operational aspects of the system.",
+        "requirements": {
+          "completeness": "Showing the effectiveness of the new product design in reducing the identified risks",
+          "quality": ".",
+          "presentation": ""
+        }
+      },
+      {
+        "id": "2",
+        "name": "Risk Acceptability Evaluation",
+        "description": "Determine if the residual risks are acceptable based on predefined criteria.",
+        "requirements": {
+          "completeness": "All identified risks must be evaluated against the acceptance criteria.",
+          "quality": "Evaluation criteria should align with industry standards and regulations. And Risk estimation should consider both frequency and severity, including short-term and long-term consequences",
+          "presentation": "Clearly document the rationale for accepting or rejecting each residual risk."
+        }
+      },
+      {
+        "id": "3",
+        "name": "Final Decision on Product Readiness",
+        "description": "Make a final decision on whether the product is ready for manufacturing based on the residual risk assessment.",
+        "requirements": {
+          "completeness": "Consider all aspects of the risk assessment in the decision-making process.",
+          "quality": "The decision should be based on a thorough understanding of the residual risks and their potential impacts.",
+          "presentation": "Provide a clear justification for the final decision, including any conditions or recommendations."
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "note": "This step is an important moment to decide if the product is ready to be manufactured. Therefore AI cannot be used to make decisions. This step provides reflective questions to check your knowledge.",
+    "reflective_questions": [
+      {
+        "category": "Hazard Identification and Analysis",
+        "questions": [
+          "Have all potential hazards been identified for each aspect of the system (functional, technical, and operational)?",
+          "What methods were used to identify these hazards?",
+          "Are there any areas of the system where hazards might have been overlooked?",
+          "How have we ensured a comprehensive analysis of each identified hazard?"
+        ]
+      },
+      {
+        "category": "Risk Estimation (Frequency and Severity)",
+        "questions": [
+          "What criteria are we using to estimate the frequency of each identified risk?",
+          "How are we determining the potential severity of each risk?",
+          "Are we considering both short-term and long-term consequences in our severity estimations?",
+          "Have we accounted for any potential cascading effects in our risk estimations?"
+        ]
+      },
+      {
+        "category": "Risk Evaluation",
+        "questions": [
+          "What criteria are we using to determine if a residual risk is acceptable?",
+          "How do our risk acceptance criteria align with industry standards and regulations?",
+          "Are there any risks that fall into a 'grey area' of acceptability? How are we addressing these?",
+          "How are we prioritizing risks that have been deemed unacceptable?",
+          "What methods are we using to compare and rank different risks?"
+        ]
+      },
+      {
+        "category": "Overall Assessment",
+        "questions": [
+          "How confident are we in the completeness of our risk assessment?",
+          "Are there any areas where we feel additional expertise or analysis might be needed?",
+          "How does our current residual risk profile compare to our initial expectations or goals?",
+          "What steps can we take to further reduce any unacceptable residual risks?"
+        ]
+      }
+    ]
+  }
+}

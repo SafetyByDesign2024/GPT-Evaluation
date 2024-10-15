@@ -1,0 +1,204 @@
+{
+  "evaluation": {
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Product Concept Design",
+        "description": "Develop operational, technical, and functional concepts to understand how the product will be used, what systems are needed, and what functions they'll perform.",
+        "subtasks": [
+          {
+            "id": 1.1,
+            "name": "Operational Concept",
+            "description": "Create a flowchart showing the sequence of interactions between users and the product, identifying key interaction points.",
+            "requirements": {
+              "completeness": [
+                {
+                  "id": 1,
+                  "description": "The 3 critical interaction points are mentioned: Start/Activation, Stop/Deactivation, and working Mechanisms."
+                },
+                {
+                  "id": 2,
+                  "description": "Compare the interaction with old product and possible future concepts(e.g. future lifestyle changes, new technologies)"
+                }
+              ],
+              "quality": [
+                {
+                  "id": 1,
+                  "description": "High quality also means users mentioned different interaction points, such as Adjustment, Feedback Mechanisms, Error Handling, Confirmation/Verification, and Emergency Interactions"
+                }
+              ],
+              "presentation": [
+                {
+                  "id": 1,
+                  "description": "Present the concept using a clear Human-Product Interaction Diagram."
+                }
+              ]
+            }
+          },
+          {
+            "id": 1.2,
+            "name": "Technical Concept",
+            "description": "Describe the technical systems and subsystems needed using a hierarchical representation of the product.",
+            "requirements": {
+              "completeness": [
+                {
+                  "id": 1,
+                  "description": "Include basic technical components related to safety such as risks detectors, preventative barriers, and risk confirmation, risk handling, and risk management."
+                },
+                {
+                  "id": 2,
+                  "description": "Compare the technical components with old product and possible future components(e.g. new technologies)"
+                }
+              ],
+              "quality": [
+                {
+                  "id": 1,
+                  "description": "High quality means the technical components using well-tested and established technologies and complies with relevant safety standards and regulations"
+                },
+				{
+					"id": 2,
+					"description": "High quality also means a plan to integrate the components into the product is mentioned."
+				}
+              ],
+              "presentation": [
+                {
+                  "id": 1,
+                  "description": "Present the concept using a clear Tree Diagram."
+                }
+              ]
+            }
+          },
+          {
+            "id": 1.3,
+            "name": "Functional Concept",
+            "description": "Describe the functions that the systems will perform.",
+            "requirements": {
+              "completeness": [
+                {
+                  "id": 1,
+                  "description": "Address the function of the product components"
+                }
+              ],
+              "quality": [
+                {
+                  "id": 1,
+                  "description": "Mention the link between the function of the components and users needs."
+                }
+              ],
+              "presentation": [
+                {
+                  "id": 1,
+                  "description": "Present the concept using a clear Tree Diagram."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Identify and Reflect on Environmental Factors",
+        "description": "Identify how environmental factors (both physical and non-physical) can impact the product.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "Consider both physical and non-physical environmental factors."
+            },
+            {
+              "id": 2,
+              "description": "Analyze the impact of these factors on the product."
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "Provide a clear analysis of how each factor affects the product and versa."
+            },
+            {
+              "id": 2,
+              "description": "Consider both immediate and long-term impacts of environmental factors."
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Clearly categorize factors into physical and non-physical groups."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "step_overview": {
+      "introduction": "This step focuses on evaluate a clear product vision through concept design and considering environmental factors.",
+      "main_components": [
+        {
+          "name": "Product Concept Design",
+          "description": "Develop operational, technical, and functional concepts to understand how the product will be used, what systems are needed, and what functions they'll perform."
+        },
+        {
+          "name": "Environmental Factors",
+          "description": "Analyze physical (e.g., weather, working conditions) and non-physical (e.g., regulations, policies) factors that could affect the product."
+        }
+      ]
+    },
+    "concept_design_subtasks": [
+      {
+        "id": 1.1,
+        "name": "Operational Concept",
+        "description": "Create a flowchart showing the sequence of interactions between users and the product, identifying key interaction points.",
+        "steps": [
+          "Brainstorm all possible interactions",
+          "Narrow down to the main interactions"
+        ],
+        "diagram": {
+          "type": "Human-Product Interaction Diagram",
+          "description": "A flowchart representing how users interact with the product, highlighting critical interaction points.",
+          "image": "HPI diagram.png"
+        }
+      },
+      {
+        "id": 1.2,
+        "name": "Technical Concept",
+        "description": "Describe the technical systems and subsystems needed using a hierarchical representation of the product.",
+        "steps": [
+          "GPT provides preset components (e.g., wheels, frame for a bike)",
+          "Users provide details about components",
+          "GPT helps modify components based on users' needs"
+        ],
+        "diagram": {
+          "type": "Tree Diagram",
+          "description": "A graphical tool displaying the hierarchical structure of elements, illustrating how different components are related.",
+          "image": "HPI diagram.png"
+        }
+      },
+      {
+        "id": 1.3,
+        "name": "Functional Concept",
+        "description": "Describe the functions that the systems will perform.",
+        "steps": [
+          "Users choose parts of the technical concept to translate into a functional diagram",
+          "GPT suggests a functional concept based on the chosen components",
+          "Users review and modify the functional components as necessary"
+        ],
+        "diagram": {
+          "type": "Tree Diagram",
+          "description": "A graphical tool displaying the hierarchical structure of elements, illustrating how different components are related.",
+          "image": "HPI diagram.png"
+        }
+      }
+    ],
+    "environmental_factors": [
+      {
+        "type": "Physical",
+        "examples": ["Weather", "Working conditions"]
+      },
+      {
+        "type": "Non-physical",
+        "examples": ["Regulations", "Policies"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "evaluation": {
+    "step_overview": {
+      "goal": "To safely retire and dispose of the (sub)system under consideration."
+    },
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Complete Environmental Management System Planning",
+        "description": "GPT will provide users with a 'to-do-list' based on environmental management standards. Then GPT will guide users through the list and assist them in filling in the details.",
+        "requirements": {
+          "completeness": [
+            {
+              "id": 1,
+              "description": "mention which items in the provided to-do list are mentioned in the knowledge base. and which are not."
+            }
+          ],
+          "quality": [
+            {
+              "id": 1,
+              "description": "the more detailed the better"
+            },
+            {
+              "id": 2,
+              "description": "suggest improvements where possible"
+            }
+          ],
+          "presentation": [
+            {
+              "id": 1,
+              "description": "Organize information in a clear, structured manner"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "knowledge_base": {
+    "to_do_list": [
+      {
+        "task": "Plan actions to address significant environmental aspects",
+        "subtasks": [
+          "Identify the significant environmental impacts that the organization and the products have during reuse, recycling, and disposal"
+        ]
+      },
+      {
+        "task": "Plan actions to address compliance obligations",
+        "subtasks": [
+          "The big task is to review and list all applicable compliance obligations. Users need to do this step carefully and completely."
+        ]
+      },
+      {
+        "task": "Plan actions to address identified risks and opportunities",
+        "subtasks": [
+          "Develop action plans to mitigate risks and capitalize on opportunities. Consider information at 'considerations'."
+        ]
+      },
+      {
+        "task": "Plan integration of actions into EMS processes",
+        "subtasks": [
+          "Identify and consider the following aspects while planning integration:",
+          [
+            "a) What specific actions will be taken to integrate environmental management into existing processes",
+            "b) What resources (financial, human, technological) will be required for successful integration",
+            "c) Who will be responsible for overseeing and implementing the integration process",
+            "d) When each phase of the integration will be completed, including key milestones and deadlines",
+            "e) How the results of the integration will be evaluated, including:",
+            "   - Defining indicators for monitoring progress towards measurable environmental objectives",
+            "   - Establishing methods for data collection and analysis",
+            "   - Setting up regular review processes to assess effectiveness and make adjustments"
+          ]
+        ]
+      },
+      {
+        "task": "Plan evaluation of action effectiveness",
+        "subtasks": [
+          "Establish criteria for measuring effectiveness of actions",
+          "Develop a schedule for reviewing and evaluating actions",
+          "Create a feedback mechanism for continuous improvement"
+        ]
+      }
+    ],
+    "considerations": [
+      {
+        "category": "Within the environment of the system",
+        "examples": [
+          "Circularity and recycling of materials",
+          "Environmental impact of disposal methods",
+          "Energy consumption during end-of-life processes"
+        ]
+      },
+      {
+        "category": "Within the system under consideration",
+        "examples": [
+          "Disconnecting and dismantling of systems",
+          "Safety procedures for decommissioning",
+          "Proper handling of hazardous components"
+        ]
+      },
+      {
+        "category": "Within the subsystems",
+        "examples": [
+          "Possible reuse of subsystems or parts",
+          "Refurbishment potential of components",
+          "Separation of materials for recycling"
+        ]
+      },
+      {
+        "category": "From the past",
+        "examples": [
+          "Knowledge, information or data related to disposal",
+          "Lessons learned from previous product end-of-life cycles",
+          "Historical data on material degradation and longevity"
+        ]
+      },
+      {
+        "category": "For the future",
+        "examples": [
+          "Potential future environmental considerations and impacts",
+          "Emerging safety or security considerations",
+          "Anticipated changes in recycling technologies and regulations"
+        ]
+      }
+    ]
+  }
+}
